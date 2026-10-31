@@ -793,7 +793,7 @@ wheels = [
 ]
 
 [[package]]
-name = "src"
+name = "smart-talent-oee"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
