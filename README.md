@@ -47,3 +47,15 @@ uv sync                       # instala as dependências
 docker compose up -d --wait   # sobe o Postgres e espera ficar pronto
 uv run alembic upgrade head   # cria as tabelas e carrega o CSV
 ```
+
+## API
+
+Copie o `.env.example` para `.env` e, após aplicar as migrations, inicie o back-end:
+
+```bash
+docker compose up -d --build backend
+```
+
+A documentação interativa fica em `http://localhost:8000/docs`. A API usa o modelo
+em `ml-model/models/modelo_manutencao.joblib` por padrão no ambiente local e aceita
+as origens do Vite configuradas em `CORS_ORIGINS`.
